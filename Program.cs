@@ -1,15 +1,24 @@
-﻿using System;
+﻿using cse210_06.Game.Casting;
 using cse210_06.Game.Directing;
+using cse210_06.Game.Scripting;
+using cse210_06.Game.Scripting.Scenes;
 using cse210_06.Game.Services;
 
-namespace cse210_06
+
+namespace Program
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            // Director director = new Director(SceneManager.VideoService);
-            // director.StartGame();
+            IServiceFactory serviceFactory = new RaylibServiceFactory();
+            Scene scene = new Scene();
+
+            SceneLoader menuSceneLoader = new MenuSceneLoader(serviceFactory);
+            menuSceneLoader.Load(scene);
+
+            Director director = new Director(serviceFactory);
+            director.Direct(scene);
         }
     }
 }
