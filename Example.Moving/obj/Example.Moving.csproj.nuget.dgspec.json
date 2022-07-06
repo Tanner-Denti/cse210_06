@@ -1,0 +1,122 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\TanTh\\OneDrive\\Desktop\\ALL\\School\\CSE 210 - Programming With Classes\\Final_Project\\cse210_06\\Example.Moving\\Example.Moving.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\TanTh\\OneDrive\\Desktop\\ALL\\School\\CSE 210 - Programming With Classes\\Final_Project\\cse210_06\\Byui.Games\\Byui.Games.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TanTh\\OneDrive\\Desktop\\ALL\\School\\CSE 210 - Programming With Classes\\Final_Project\\cse210_06\\Byui.Games\\Byui.Games.csproj",
+        "projectName": "Byui.Games",
+        "projectPath": "C:\\Users\\TanTh\\OneDrive\\Desktop\\ALL\\School\\CSE 210 - Programming With Classes\\Final_Project\\cse210_06\\Byui.Games\\Byui.Games.csproj",
+        "packagesPath": "C:\\Users\\TanTh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TanTh\\OneDrive\\Desktop\\ALL\\School\\CSE 210 - Programming With Classes\\Final_Project\\cse210_06\\Byui.Games\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TanTh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Raylib-cs": {
+              "target": "Package",
+              "version": "[4.0.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\TanTh\\OneDrive\\Desktop\\ALL\\School\\CSE 210 - Programming With Classes\\Final_Project\\cse210_06\\Example.Moving\\Example.Moving.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TanTh\\OneDrive\\Desktop\\ALL\\School\\CSE 210 - Programming With Classes\\Final_Project\\cse210_06\\Example.Moving\\Example.Moving.csproj",
+        "projectName": "Example.Moving",
+        "projectPath": "C:\\Users\\TanTh\\OneDrive\\Desktop\\ALL\\School\\CSE 210 - Programming With Classes\\Final_Project\\cse210_06\\Example.Moving\\Example.Moving.csproj",
+        "packagesPath": "C:\\Users\\TanTh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TanTh\\OneDrive\\Desktop\\ALL\\School\\CSE 210 - Programming With Classes\\Final_Project\\cse210_06\\Example.Moving\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TanTh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\TanTh\\OneDrive\\Desktop\\ALL\\School\\CSE 210 - Programming With Classes\\Final_Project\\cse210_06\\Byui.Games\\Byui.Games.csproj": {
+                "projectPath": "C:\\Users\\TanTh\\OneDrive\\Desktop\\ALL\\School\\CSE 210 - Programming With Classes\\Final_Project\\cse210_06\\Byui.Games\\Byui.Games.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
