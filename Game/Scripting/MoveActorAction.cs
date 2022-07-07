@@ -24,12 +24,12 @@ namespace Scripting
             try
             {
                 // get the actors from the scene
-                Actor actor = scene.GetFirstActor("actors");
+                Actor player = scene.GetFirstActor("player");
                 Actor screen = scene.GetFirstActor("screen");
                 
                 // move the actor and wrap it around the screen boundaries
-                actor.Move();
-                actor.ClampTo(screen);
+                player.Move();
+                player.ClampTo(screen);
             }
             catch (Exception exception)
             {

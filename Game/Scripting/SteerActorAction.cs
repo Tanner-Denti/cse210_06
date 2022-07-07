@@ -48,8 +48,8 @@ namespace Scripting
                 }
 
                 // steer the actor in the desired direction
-                Actor actor = scene.GetFirstActor("actors");
-                actor.Steer(directionX, directionY);
+                Actor player = scene.GetFirstActor("player");
+                player.Steer(directionX, directionY);
             }
             catch (Exception exception)
             {

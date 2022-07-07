@@ -25,10 +25,15 @@ namespace Game
             // label.Display("'w', 's', 'a', 'd' to move");
             // label.MoveTo(25, 25);
             
-            Actor actor = new Actor();
-            actor.SizeTo(20, 20);
-            actor.MoveTo(640, 480);
-            actor.Tint(Color.Blue());
+            Actor player = new Actor();
+            player.SizeTo(20, 20);
+            player.MoveTo(640, 480);
+            player.Tint(Color.Blue());
+
+            Actor enemy = new Actor();
+            enemy.SizeTo(30, 30);
+            enemy.MoveTo(100, 100);
+            enemy.Tint(Color.Red());
 
             Actor screen = new Actor();
             screen.SizeTo(1280, 960);
@@ -41,7 +46,8 @@ namespace Game
 
             // Instantiate a new scene, add the actors and actions.
             Scene scene = new Scene();
-            scene.AddActor("actors", actor);
+            scene.AddActor("player", player);
+            scene.AddActor("enemy", enemy);
             // scene.AddActor("labels", label);
             scene.AddActor("screen", screen);
             scene.AddAction(Phase.Input, steerActorAction);
