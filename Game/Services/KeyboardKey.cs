@@ -1,7 +1,7 @@
 using System;
 
 
-namespace cse210_06.Game.Services
+namespace Services
 {
     public class KeyboardKey
     {

@@ -3,7 +3,7 @@ using System.IO;
 using Raylib_cs;
 
 
-namespace cse210_06.Game.Services
+namespace Services
 {
     public class RaylibAudioService : IAudioService
     {

@@ -5,7 +5,7 @@ using System.Numerics;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 
-namespace cse210_06.Game.Services
+namespace Services
 {
     public class JsonSettingsService : ISettingsService
     {

@@ -1,6 +1,6 @@
-using cse210_06.Game.Casting;
+using Casting;
 
-namespace cse210_06.Game.Services
+namespace Services
 {
     public interface IServiceFactory
     {

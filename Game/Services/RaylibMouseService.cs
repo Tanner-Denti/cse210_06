@@ -3,7 +3,7 @@ using System.Numerics;
 using Raylib_cs;
 
 
-namespace cse210_06.Game.Services
+namespace Services
 {
     /// <summary>
     /// A Raylib implementation of IMouseService.

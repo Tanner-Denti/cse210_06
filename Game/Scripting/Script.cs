@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using cse210_06.Game.Casting;
+using Casting;
 
 
-namespace cse210_06.Game.Scripting
+namespace Scripting
 {
     /// <summary>
     /// A collection of Actions.

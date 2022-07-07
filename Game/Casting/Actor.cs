@@ -1,7 +1,8 @@
 using System;
 using System.Numerics;
 
-namespace cse210_06.Game.Casting
+
+namespace Casting
 {
     /// <summary>
     /// A participant in the game.

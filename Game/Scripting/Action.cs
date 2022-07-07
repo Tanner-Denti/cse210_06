@@ -1,4 +1,4 @@
-namespace cse210_06.Game.Scripting
+namespace Scripting
 {
     /// <summary>
     /// A thing that is done in the game.

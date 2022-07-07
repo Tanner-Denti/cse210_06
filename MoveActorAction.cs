@@ -1,7 +1,7 @@
 using System;
-using Byui.Games.Casting;
-using Byui.Games.Scripting;
-using Byui.Games.Services;
+using Casting;
+using Scripting;
+using Services;
 
 
 namespace Example.Scaling
@@ -11,7 +11,7 @@ namespace Example.Scaling
     /// steering them which only changes their direction. The call to actor.Move() is what updates
     /// their position on the screen.
     /// </summary>
-    public class MoveActorAction : Byui.Games.Scripting.Action
+    public class MoveActorAction : Scripting.Action
     {
         private IKeyboardService _keyboardService;
 

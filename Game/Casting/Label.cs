@@ -1,4 +1,4 @@
-namespace cse210_06.Game.Casting
+namespace Casting
 {
     /// <summary>
     /// A readable Actor.

@@ -1,7 +1,7 @@
 using System;
-using Byui.Games.Casting;
-using Byui.Games.Scripting;
-using Byui.Games.Services;
+using Casting;
+using Scripting;
+using Services;
 
 
 namespace Example.Scaling
@@ -9,7 +9,7 @@ namespace Example.Scaling
     /// <summary>
     /// Draws the actors on the screen.
     /// </summary>
-    public class DrawActorAction : Byui.Games.Scripting.Action
+    public class DrawActorAction : Scripting.Action
     {
         private IVideoService _videoService;
 

@@ -1,7 +1,7 @@
 using System;
 
 
-namespace cse210_06.Game.Scripting
+namespace Scripting
 {
     /// <summary>
     /// Defines game phases.

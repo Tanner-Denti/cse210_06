@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using cse210_06.Game.Scripting;
-using cse210_06.Game.Services;
+using Scripting;
+using Services;
 
-namespace cse210_06.Game.Directing
+namespace Directing
 {
     /// <summary>
     /// Controls the sequence and pacing of the game.
@@ -60,8 +60,8 @@ namespace cse210_06.Game.Directing
         private void DoActions(int phase, Scene scene)
         {
             float deltaTime = _videoService.GetDeltaTime();
-            List<cse210_06.Game.Scripting.Action> actions = scene.GetAllActions(phase);
-            foreach(cse210_06.Game.Scripting.Action action in actions)
+            List<Scripting.Action> actions = scene.GetAllActions(phase);
+            foreach(Scripting.Action action in actions)
             {
                 action.Execute(scene, deltaTime, this);
             }

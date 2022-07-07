@@ -1,7 +1,7 @@
 using System.Numerics;
 
 
-namespace cse210_06.Game.Services
+namespace Services
 {
     public interface ISettingsService
     {

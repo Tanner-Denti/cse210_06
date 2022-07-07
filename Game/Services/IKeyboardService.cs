@@ -1,4 +1,4 @@
-namespace cse210_06.Game.Services
+namespace Services
 {
     public interface IKeyboardService
     {
