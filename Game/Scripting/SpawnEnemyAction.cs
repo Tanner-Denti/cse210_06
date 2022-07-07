@@ -18,7 +18,7 @@ namespace Scripting
             this.spawnTimerActive = false;
             this.enemySpawn = false;
             this.lastSpawn = new DateTime();
-            this.spawnInterval = spawnInterval * 1000;
+            this.spawnInterval = 1000;
             this.random = new Random();
         }
 

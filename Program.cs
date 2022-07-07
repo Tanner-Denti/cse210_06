@@ -30,11 +30,6 @@ namespace Game
             player.MoveTo(640, 480);
             player.Tint(Color.Blue());
 
-            Actor enemy = new Actor();
-            enemy.SizeTo(30, 30);
-            enemy.MoveTo(100, 100);
-            enemy.Tint(Color.Red());
-
             Actor screen = new Actor();
             screen.SizeTo(1280, 960);
             screen.MoveTo(0, 0);
@@ -48,7 +43,6 @@ namespace Game
             // Instantiate a new scene, add the actors and actions.
             Scene scene = new Scene();
             scene.AddActor("player", player);
-            scene.AddActor("enemy", enemy);
             // scene.AddActor("labels", label);
             scene.AddActor("screen", screen);
             scene.AddAction(Phase.Input, steerActorAction);

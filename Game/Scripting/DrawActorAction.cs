@@ -26,14 +26,12 @@ namespace Scripting
                 // Label label = (Label) scene.GetFirstActor("labels");
        
                 Actor player = scene.GetFirstActor("player");
-                Actor enemy = scene.GetFirstActor("enemy");
                 List<Casting.Actor> enemies = scene.GetAllActors("enemies");
                 
                 // draw the actors on the screen using the video service
                 _videoService.ClearBuffer();
                 // _videoService.Draw(label);
                 _videoService.Draw(player);
-                _videoService.Draw(enemy);
                 _videoService.Draw(enemies);
                 _videoService.FlushBuffer();
             }
