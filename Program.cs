@@ -40,7 +40,7 @@ namespace Game
             screen.MoveTo(0, 0);
 
             // Instantiate the actions that use the actors.
-            // SpawnEnemyAction spawnEnemyAction = new SpawnEnemyAction(serviceFactory);
+            SpawnEnemyAction spawnEnemyAction = new SpawnEnemyAction(serviceFactory);
             SteerActorAction steerActorAction = new SteerActorAction(serviceFactory);
             MoveActorAction moveActorAction = new MoveActorAction(serviceFactory);
             DrawActorAction drawActorAction = new DrawActorAction(serviceFactory);
@@ -53,7 +53,7 @@ namespace Game
             scene.AddActor("screen", screen);
             scene.AddAction(Phase.Input, steerActorAction);
             scene.AddAction(Phase.Update, moveActorAction);
-            // scene.AddAction(Phase.Update, spawnEnemyAction);
+            scene.AddAction(Phase.Update, spawnEnemyAction);
             scene.AddAction(Phase.Output, drawActorAction);
 
             // Start the game.
