@@ -1,19 +1,19 @@
 
 
-namespace Casting
-{
-    public class Enemy : Actor
-    {
+// namespace Casting
+// {
+//     public class Enemy : Actor
+//     {
 
 
-        public Enemy()
-        {
+//         public Enemy(int width, int height, float x = 0, float y = 0)
+//         {
 
-        }
-
-
-        
+//         }
 
 
-    }
-}
+
+
+
+//     }
+// }
