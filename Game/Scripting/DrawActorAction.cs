@@ -22,12 +22,10 @@ namespace Scripting
             try
             {
                 // get the actors from the cast
-                Label label = (Label) scene.GetFirstActor("labels");
                 Actor actor = scene.GetFirstActor("actors");
                 
                 // draw the actors on the screen using the video service
                 _videoService.ClearBuffer();
-                _videoService.Draw(label);
                 _videoService.Draw(actor);
                 _videoService.FlushBuffer();
             }

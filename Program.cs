@@ -21,17 +21,14 @@ namespace Game
             IServiceFactory serviceFactory = new RaylibServiceFactory();
 
             // Instantiate the actors that are used in this example.
-            Label label = new Label();
-            label.Display("'w', 's', 'a', 'd' to move");
-            label.MoveTo(25, 25);
             
             Actor actor = new Actor();
-            actor.SizeTo(100, 100);
-            actor.MoveTo(270, 190);
+            actor.SizeTo(20, 20);
+            actor.MoveTo(640, 480);
             actor.Tint(Color.Blue());
 
             Actor screen = new Actor();
-            screen.SizeTo(640, 480);
+            screen.SizeTo(1280, 960);
             screen.MoveTo(0, 0);
 
             // Instantiate the actions that use the actors.
@@ -42,7 +39,6 @@ namespace Game
             // Instantiate a new scene, add the actors and actions.
             Scene scene = new Scene();
             scene.AddActor("actors", actor);
-            scene.AddActor("labels", label);
             scene.AddActor("screen", screen);
             scene.AddAction(Phase.Input, steerActorAction);
             scene.AddAction(Phase.Update, moveActorAction);
