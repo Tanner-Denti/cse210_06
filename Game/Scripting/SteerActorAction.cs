@@ -1,10 +1,9 @@
 using System;
 using Casting;
-using Scripting;
 using Services;
 
 
-namespace Example.Scaling
+namespace Scripting
 {
     /// <summary>
     /// Steers an actor in a direction corresponding to keyboard input. Note, this does not update 

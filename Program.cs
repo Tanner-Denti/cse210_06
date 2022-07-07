@@ -4,7 +4,7 @@ using Scripting;
 using Services;
 
 
-namespace Example.Scaling
+namespace Game
 {
     /// <summary>
     /// The entry point for the program.

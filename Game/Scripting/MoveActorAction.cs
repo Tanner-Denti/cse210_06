@@ -1,10 +1,9 @@
 using System;
 using Casting;
-using Scripting;
 using Services;
 
 
-namespace Example.Scaling
+namespace Scripting
 {
     /// <summary>
     /// Moves the actors and wraps them around the screen boundaries. Note, this is different from

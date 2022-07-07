@@ -1,10 +1,9 @@
 using System;
 using Casting;
-using Scripting;
 using Services;
 
 
-namespace Example.Scaling
+namespace Scripting
 {
     /// <summary>
     /// Draws the actors on the screen.
