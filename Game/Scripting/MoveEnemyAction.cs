@@ -18,18 +18,33 @@ namespace Scripting
         {
             Actor player = scene.GetFirstActor("player");
             List<Casting.Actor> enemies = scene.GetAllActors("enemies");
-            Vector2 playerPosition = player.GetCenter();
+            float playerPositionX = player.GetCenterX();
+            float playerPositionY = player.GetCenterY();
 
             foreach(Actor enemy in enemies)
             {
-                Vector2 enemyPosition = enemy.GetCenter();
+                float enemyPositionX = enemy.GetCenterX();
+                float enemyPositionY = enemy.GetCenterY();
+                int vx = 0;
+                int vy = 0;
                 
-                
-                int vx = 3;
-                int vy = 3;
-                
-
-                //calculate x and y
+                if(playerPositionX - enemyPositionX < 0)
+                {
+                    vx = -2;
+                }
+                else
+                {
+                    vx = 2;
+                }
+                if(playerPositionY - enemyPositionY < 0)
+                {
+                    vy = -2;
+                }
+                else
+                {
+                    vy = 2;
+                }
+              
                 enemy.Steer(vx,vy);
                 enemy.Move();
             }

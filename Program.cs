@@ -35,6 +35,7 @@ namespace Game
             screen.MoveTo(0, 0);
 
             // Instantiate the actions that use the actors.
+            HandleCollisionsAction handleCollisionsAction = new HandleCollisionsAction();
             MoveEnemyAction moveEnemyAction = new MoveEnemyAction();
             SpawnEnemyAction spawnEnemyAction = new SpawnEnemyAction(serviceFactory);
             SteerActorAction steerActorAction = new SteerActorAction(serviceFactory);
@@ -50,6 +51,7 @@ namespace Game
             scene.AddAction(Phase.Update, moveActorAction);
             scene.AddAction(Phase.Update, spawnEnemyAction);
             scene.AddAction(Phase.Update, moveEnemyAction);
+            scene.AddAction(Phase.Update, handleCollisionsAction);
             scene.AddAction(Phase.Output, drawActorAction);
 
             // Start the game.
