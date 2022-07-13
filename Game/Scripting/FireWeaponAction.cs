@@ -12,6 +12,8 @@ namespace Scripting
         private IMouseService _mouseService;
         private Vector2 target;
         private Vector2 playerPos;
+        float vx;
+        float vy;
 
         public FireWeaponAction(IServiceFactory serviceFactory)
         {
@@ -36,11 +38,16 @@ namespace Scripting
                 Vector2 playerPos = player.GetCenter();
                 Bullet bullet = this.CreateBullet(playerPos);
                 scene.AddActor("bullets", bullet);
-                bullet.Steer(3,3);
-                float x = target.X;
-                float y = target.Y;
+                vx = (target.X - playerPos.X)/50;
+                vy = (target.Y - playerPos.Y)/50;
+
+
+                Console.WriteLine(vx);
+                Console.WriteLine(vy);
                 
-            }
+                bullet.Steer(vx,vy);
+            }    
+            
 
 
 
