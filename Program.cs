@@ -38,6 +38,7 @@ namespace Game
             MoveBulletAction moveBulletAction = new MoveBulletAction();
             FireWeaponAction fireWeaponAction = new FireWeaponAction(serviceFactory);
             HandlePlayerCollisionsAction handlePlayerCollisionsAction = new HandlePlayerCollisionsAction();
+            HandleWeaponCollisionsAction handleWeaponCollisionsAction = new HandleWeaponCollisionsAction();
             MoveEnemyAction moveEnemyAction = new MoveEnemyAction();
             SpawnEnemyAction spawnEnemyAction = new SpawnEnemyAction(serviceFactory);
             SteerActorAction steerActorAction = new SteerActorAction(serviceFactory);
@@ -55,6 +56,7 @@ namespace Game
             scene.AddAction(Phase.Update, spawnEnemyAction);
             scene.AddAction(Phase.Update, moveEnemyAction);
             scene.AddAction(Phase.Update, moveBulletAction);
+            scene.AddAction(Phase.Update, handleWeaponCollisionsAction);
             scene.AddAction(Phase.Update, handlePlayerCollisionsAction);
             scene.AddAction(Phase.Output, drawActorAction);
 
