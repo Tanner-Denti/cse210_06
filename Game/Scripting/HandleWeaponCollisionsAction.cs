@@ -16,20 +16,23 @@ namespace Scripting
 
         public override void Execute(Scene scene, float deltaTime, IActionCallback callback)
         {
-            List<Actor> bullets = scene.GetAllActors("bullets");
-            List<Actor> enemies = scene.GetAllActors("enemies");
-            foreach(Actor bullet in bullets)
+            DoWeaponCollision(scene);
+        }
+
+        private void DoWeaponCollision(Scene scene)
+        {
+            List<Actor> bullets = scene.GetAllActors<Actor>("bullets");
+            List<Actor> enemies = scene.GetAllActors<Actor>("enemies");
+            foreach(Actor enemy in enemies)
             {
-                foreach(Actor enemy in enemies)
+                foreach(Actor bullet in bullets)
                 {
                     if(enemy.Overlaps(bullet))
-                    {
+                    {   
                         scene.RemoveActor("enemies", enemy);
-                    }
+                    }           
                 }
             }
-
-        }
-            
+        }         
     }
 }
