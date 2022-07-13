@@ -37,7 +37,7 @@ namespace Game
             // Instantiate the actions that use the actors.
             MoveBulletAction moveBulletAction = new MoveBulletAction();
             FireWeaponAction fireWeaponAction = new FireWeaponAction(serviceFactory);
-            HandleCollisionsAction handleCollisionsAction = new HandleCollisionsAction();
+            HandlePlayerCollisionsAction handlePlayerCollisionsAction = new HandlePlayerCollisionsAction();
             MoveEnemyAction moveEnemyAction = new MoveEnemyAction();
             SpawnEnemyAction spawnEnemyAction = new SpawnEnemyAction(serviceFactory);
             SteerActorAction steerActorAction = new SteerActorAction(serviceFactory);
@@ -55,7 +55,7 @@ namespace Game
             scene.AddAction(Phase.Update, spawnEnemyAction);
             scene.AddAction(Phase.Update, moveEnemyAction);
             scene.AddAction(Phase.Update, moveBulletAction);
-            scene.AddAction(Phase.Update, handleCollisionsAction);
+            scene.AddAction(Phase.Update, handlePlayerCollisionsAction);
             scene.AddAction(Phase.Output, drawActorAction);
 
             // Start the game.

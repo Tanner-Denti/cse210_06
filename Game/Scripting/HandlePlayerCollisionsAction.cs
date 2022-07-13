@@ -5,9 +5,9 @@ using Services;
 
 namespace Scripting 
 {
-    public class HandleCollisionsAction : Scripting.Action 
+    public class HandlePlayerCollisionsAction : Scripting.Action 
     {
-        public HandleCollisionsAction()
+        public HandlePlayerCollisionsAction()
         {
             
         }
