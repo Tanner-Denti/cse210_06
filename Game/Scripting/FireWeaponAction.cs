@@ -38,8 +38,8 @@ namespace Scripting
                 Vector2 playerPos = player.GetCenter();
                 Bullet bullet = this.CreateBullet(playerPos);
                 scene.AddActor("bullets", bullet);
-                vx = (target.X - playerPos.X)/50;
-                vy = (target.Y - playerPos.Y)/50;
+                vx = (target.X - playerPos.X)/35;
+                vy = (target.Y - playerPos.Y)/35;
 
 
                 Console.WriteLine(vx);
