@@ -27,12 +27,14 @@ namespace Scripting
        
                 Actor player = scene.GetFirstActor("player");
                 List<Casting.Actor> enemies = scene.GetAllActors("enemies");
+                List<Casting.Actor> bullets = scene.GetAllActors("bullets");
                 
                 // draw the actors on the screen using the video service
                 _videoService.ClearBuffer();
                 // _videoService.Draw(label);
                 _videoService.Draw(player);
                 _videoService.Draw(enemies);
+                _videoService.Draw(bullets);
                 _videoService.FlushBuffer();
             }
             catch (Exception exception)

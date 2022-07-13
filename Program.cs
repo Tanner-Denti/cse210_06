@@ -35,6 +35,8 @@ namespace Game
             screen.MoveTo(0, 0);
 
             // Instantiate the actions that use the actors.
+            MoveBulletAction moveBulletAction = new MoveBulletAction();
+            FireWeaponAction fireWeaponAction = new FireWeaponAction(serviceFactory);
             HandleCollisionsAction handleCollisionsAction = new HandleCollisionsAction();
             MoveEnemyAction moveEnemyAction = new MoveEnemyAction();
             SpawnEnemyAction spawnEnemyAction = new SpawnEnemyAction(serviceFactory);
@@ -48,9 +50,11 @@ namespace Game
             // scene.AddActor("labels", label);
             scene.AddActor("screen", screen);
             scene.AddAction(Phase.Input, steerActorAction);
+            scene.AddAction(Phase.Input, fireWeaponAction);
             scene.AddAction(Phase.Update, moveActorAction);
             scene.AddAction(Phase.Update, spawnEnemyAction);
             scene.AddAction(Phase.Update, moveEnemyAction);
+            scene.AddAction(Phase.Update, moveBulletAction);
             scene.AddAction(Phase.Update, handleCollisionsAction);
             scene.AddAction(Phase.Output, drawActorAction);
 
