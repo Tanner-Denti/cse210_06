@@ -26,7 +26,7 @@ namespace Game
             // label.MoveTo(25, 25);
             
             Actor player = new Actor();
-            player.SizeTo(20, 20);
+            player.SizeTo(21, 21);
             player.MoveTo(640, 480);
             player.Tint(Color.Blue());
 

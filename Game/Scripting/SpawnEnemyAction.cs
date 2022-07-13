@@ -26,7 +26,7 @@ namespace Scripting
         private Enemy CreateEnemy(int x, int y)
         {
             Enemy enemy = new Enemy();
-            enemy.SizeTo(30,30);
+            enemy.SizeTo(33,33);
             enemy.MoveTo(x, y);
             enemy.Tint(Color.Red());
             return enemy;    
