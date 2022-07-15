@@ -29,7 +29,9 @@ namespace Scripting
                 {
                     if(enemy.Overlaps(bullet))
                     {   
-                        scene.RemoveActor("enemies", enemy);
+                        enemy.MoveTo(1000,1000);
+                        enemy.Disable();
+                        //scene.RemoveActor("enemies", enemy);
                     }           
                 }
             }
