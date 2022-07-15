@@ -29,6 +29,8 @@ namespace Scripting
                if(player.Overlaps(enemy))
                {
                 player.Tint(Color.White());
+                player.Disable();
+                
                 isGameOver = true;
                }
                if(isGameOver)
