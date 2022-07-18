@@ -31,6 +31,8 @@ namespace Scripting
                     {   
                         enemy.MoveTo(1000,1000);
                         enemy.Disable();
+                        bullet.MoveTo(1200,1200);
+                        bullet.Disable();
                         //scene.RemoveActor("enemies", enemy);
                     }           
                 }
